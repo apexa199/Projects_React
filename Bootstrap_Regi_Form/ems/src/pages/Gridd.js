@@ -5,7 +5,6 @@ import { GridData } from "../components/GridData";
 export const Gridd = () => {
   return (
   
-        <GridData />
-     
+        <GridData />     
   );
 };
