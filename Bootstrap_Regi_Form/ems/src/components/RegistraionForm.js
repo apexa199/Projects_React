@@ -142,7 +142,7 @@ export const RegistraionForm = () => {
           />
         </Form.Group>
 
-        <Form.Check // prettier-ignore
+        <Form.Check 
           type="switch"
           id="custom-switch"
           label="accept Terms"
