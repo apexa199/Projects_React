@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch,useSelector} from 'react-redux';
-import { INC ,DEC} from './action/counteraction';
+import { INC ,DEC,MUL,DIV} from './action/counteraction';
 
 export const MyCounter = () => {
 
@@ -17,12 +17,26 @@ export const MyCounter = () => {
     
     }
 
+    const mul = ()=>{
+      dis(MUL())
+  
+  }
+
+  const devi = ()=>{
+    dis(DIV())
+
+}
+
   return (
     <div>
         {data}
 
-        <button onClick={icre}>+</button>
-        <button onClick={dere}>-</button>
+        <button onClick={icre}>Plus</button>
+        <button onClick={dere}>Minus</button>
+        <button onClick={mul}>Multi</button>
+        <button onClick={devi}>Divide</button>
+        
+
     </div>
   )
 }

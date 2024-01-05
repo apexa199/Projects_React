@@ -1,6 +1,6 @@
 const initialState = {}
 
-export default (state = 0, { type, payload }) => {
+export default (state = 0, { type }) => {
   switch (type) {
 
   case 'INC':
@@ -8,6 +8,12 @@ export default (state = 0, { type, payload }) => {
 
   case 'DEC':
     return state - 1 ;
+
+  case 'MUL':
+    return state * 1 ;
+
+  case 'DIV':
+      return state / 1 ;
 
   default:
     return state
