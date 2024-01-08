@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useSelector,useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { SUC,ERO,REQUEST } from './action/userAction';
+import { getUserList } from './asyncaction/userAsynAction';
 
 function App() {
 
@@ -14,21 +14,10 @@ function App() {
 
   useEffect(()=>{
 
-    dis(REQUEST())
-
-    fetch("https://jsonplaceholder.typicode.com/users")
-    .then(y=>y.json())
-    .then(y=>{
-
-      dis( SUC(y))
-      
-    }).catch(y=> {
-
-
-      dis(ERO(y))
-    })
+    dis(getUserList(1))
 
   },[])
+
   return (
     <div className="App">
      

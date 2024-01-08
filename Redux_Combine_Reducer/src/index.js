@@ -13,7 +13,7 @@ root.render(
 
     <Provider store={store}>
 
-    <Product />
+      <App />
 
     </Provider>
     
