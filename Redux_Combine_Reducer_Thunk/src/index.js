@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import { Product } from './Product';
+import {ProductThunk} from './ProductThunk'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,8 @@ root.render(
 
     <Provider store={store}>
 
-      <App />
+      <
+        ProductThunk />
 
     </Provider>
     
