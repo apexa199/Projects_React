@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './store/store';
-import Counter from './Counter';
+import Counter from './components/Counter';
+import UserData from './components/UserData';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,7 @@ root.render(
 
     <Provider store={store}>
 
-    <Counter />
+    <UserData />
 
     </Provider>
 
